@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin:300,400,600" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="parallaxjs-scene">
+  <div id="penta-scene" class="scene">
+    <div class="layer" data-depth="0.10"><div class="ideas-penta"></div></div>
+    <div class="layer" data-depth="0.20"><div class="ideas-penta"></div></div>
+    <div class="layer" data-depth="0.30"><div class="ideas-penta"></div></div>
+    <div class="layer" data-depth="0.40"><div class="ideas-penta"></div></div>
+    <div class="layer" data-depth="0.50"><div class="ideas-penta"></div></div>
+    <div class="layer" data-depth="0.60"><div class="ideas-penta"></div></div>
+  </div>
+</div>
+
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.js"></script>
+<script>
+  //  var parallax = $('#ideasPentagrowth-scene-ul').parallax({
+//    limitX: 10,
+//    limitY: 10
+//  });
+    console.log('ram');
+  var parallax = $('#penta-scene').parallax({
+    limitX: 15,
+    limitY: 15
+  });
+</script>
+</body>
+</html>

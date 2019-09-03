@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="27px" viewBox="0 0 28 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Element 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="20.7792981%" y1="6.0628521%" x2="95.3538028%" y2="114.948153%" id="linearGradient-1">
+            <stop stop-color="#C273FE" offset="0%"></stop>
+            <stop stop-color="#50FFBE" offset="21%"></stop>
+            <stop stop-color="#22C2FC" offset="42%"></stop>
+            <stop stop-color="#5B539C" offset="63%"></stop>
+            <stop stop-color="#DB75AD" offset="83%"></stop>
+            <stop stop-color="#EED9E1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1.000000, 0.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Element-13" transform="translate(1.000000, 0.000000)">
+                <path d="M28,22.7418642 L22.1522674,27 C16.7987319,23.9986786 12.0216444,20.0273857 8.05325198,15.279193 C6.8351396,13.8002263 5.71314232,12.2409923 4.69449452,10.6115447 C2.65205935,7.34339567 0,0 0,0 C0,0 1.30079046,0.763363275 1.55318264,0.938300692 C2.75301623,1.73347077 3.9450839,2.52864085 5.14880044,3.25224562 C6.35251699,3.97585039 7.57953127,4.68355176 8.77936486,5.35547048 C9.03563999,5.49860109 10.0374428,5.92401708 10.2160588,6.23810926 C11.9226707,9.22650517 14.0121192,11.9676566 16.4287893,14.3886026 C16.8636805,14.8259461 17.3141035,15.2593138 17.7684094,15.6807539 C20.8512675,18.4975505 24.293206,20.8729297 28,22.7418642 L28,22.7418642 Z" id="_Pfad_"></path>
+            </g>
+        </g>
+    </g>
+</svg>
