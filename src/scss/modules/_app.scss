@@ -1,0 +1,109 @@
+canvas {
+  z-index: 0;
+  // #TODO -- lower canvas
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+
+  h1, h3, h4 {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  h1{
+    text-transform: uppercase;
+    color: white;
+  }
+  h1 + h3{
+    color: white;
+  }
+}
+
+
+.content {
+  max-width: 1200px;
+  padding: $page-margin / 2;
+  text-align: left;
+  animation-name: reveal-text;
+  animation-iteration-count: $iteration;
+  animation-duration: $reveal-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animationCurve;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+
+  a {
+    text-decoration: none;
+  }
+
+  .calendarTile {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: lightgrey solid 1px;
+    border-radius: 15px;
+    max-width: 700px;
+    background-color: #e1e1e1;
+    box-shadow: 0 15px 35px 0 rgba(42, 51, 83, .12), 0 5px 15px rgba(0, 0, 0, .06) !important;
+    transition: all .15s ease;
+
+    &:hover {
+      box-shadow: 0 18px 35px 0 rgba(42, 51, 83, .12), 0 8px 15px rgba(0, 0, 0, .06) !important;
+      transform: translateY(-2px);
+    }
+
+    > * {
+      padding: 0.5rem 1rem;
+    }
+
+    overflow: hidden;
+
+    .tileDate {
+      background: white;
+    }
+
+    .tileContents {
+
+    }
+  }
+
+  .subtext {
+    font-size: 16px;
+    text-align: center;
+    color: lightgrey;
+    transition: all .15s ease;
+  }
+
+  a:hover + .subtext {
+    font-weight: bold;
+  }
+}
+
+#confetti_wrapper{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  div{
+    height: 100px;
+    width: 100px;
+    position: absolute !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

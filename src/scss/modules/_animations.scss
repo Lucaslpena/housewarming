@@ -1,0 +1,101 @@
+@-webkit-keyframes BackgroundAnimation {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-moz-keyframes BackgroundAnimation {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-o-keyframes BackgroundAnimation {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@keyframes BackgroundAnimation {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+
+
+@keyframes revealer-text {
+  0%, 50% {
+    transform-origin: 0 50%;
+  }
+  60%, 100% {
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+
+
+@keyframes reveal-text {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+/** BACKGROUND **/
+
+
+.spaceWrapperAnimations{
+
+  &.makingSense{
+    background: linear-gradient($backgroundTransitionDegree, $msBlue,$msGreen);
+    background-size: $backgroundTransitionBackground $backgroundTransitionBackground;
+    -webkit-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    -moz-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+
+  }
+  &.ideasForChange {
+    background: linear-gradient($backgroundTransitionDegree, $i4c_pink, $i4c_dark_pink, $i4c_purple);
+    background-size: $backgroundTransitionBackground $backgroundTransitionBackground;
+    -webkit-animation: BackgroundAnimation $backgroundTransitionTime cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    -moz-animation: BackgroundAnimation $backgroundTransitionTime cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    animation: BackgroundAnimation $backgroundTransitionTime cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  }
+  &.noiseBox{
+    //background-color: $msGreen; // image??
+    background: url(/assets/images/noisebox.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.flyshionista{
+    background: linear-gradient($backgroundTransitionDegree,$fly_teal, $fly_grey);
+    background-size: $backgroundTransitionBackground $backgroundTransitionBackground;
+    -webkit-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    -moz-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+  }
+  &.yokey{
+    background: linear-gradient($backgroundTransitionDegree,$yokey_red,$yokey_yellow);
+    background-size: $backgroundTransitionBackground $backgroundTransitionBackground;
+    -webkit-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    -moz-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+  }
+  &.soFitU{
+    background: linear-gradient($backgroundTransitionDegree, $sofitu_teal, $sofit_blue);
+    background-size: $backgroundTransitionBackground $backgroundTransitionBackground;
+    -webkit-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    -moz-animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+    animation: BackgroundAnimation $backgroundTransitionTime $animationCurve infinite;
+  }
+}

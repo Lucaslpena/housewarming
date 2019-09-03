@@ -1,0 +1,110 @@
+$paralaxLargeBreak-width: 1100px;
+
+.ideas-penta {
+  height: 300px;
+  width: 300px;
+  //position: absolute;
+  background-image: url(../../assets/images/Abstract21.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.layer{
+  position: absolute;
+  &:nth-of-type(1) {
+    top: 50% !important;
+    left: 18% !important;
+    .ideas-penta{
+      background-size: 15% 15%;
+      -webkit-transform: rotate(138deg);
+      -moz-transform: rotate(138deg);
+      -ms-transform: rotate(138deg);
+      -o-transform: rotate(138deg);
+      transform: rotate(138deg) !important;
+    }
+  }
+  &:nth-of-type(2) {
+    top: 71% !important;
+    left: 70% !important;
+    .ideas-penta{
+      background-size: 23% 23%;
+      -webkit-transform: rotate(64deg);
+      -moz-transform: rotate(64deg);
+      -ms-transform: rotate(64deg);
+      -o-transform: rotate(64deg);
+      transform: rotate(64deg) !important;
+      filter: blur(2px);
+    }
+  }
+  &:nth-of-type(3) {
+    top: 22% !important;
+    left: -2% !important;
+    .ideas-penta{
+      background-size: 28% 28%;
+      -webkit-transform: rotate(206deg);
+      -moz-transform: rotate(206deg);
+      -ms-transform: rotate(206deg);
+      -o-transform: rotate(206deg);
+      transform: rotate(206deg) !important;
+      filter: blur(2px);
+    }
+  }
+  &:nth-of-type(4) {
+    top: 15% !important;
+    left: 65% !important;
+    //@media all and (max-width: $paralaxLargeBreak-width) {
+    //  visibility: hidden;
+    //}
+    .ideas-penta{
+      background-size: 33% 33%;
+      -webkit-transform: rotate(299deg);
+      -moz-transform: rotate(299deg);
+      -ms-transform: rotate(299deg);
+      -o-transform: rotate(299deg);
+      transform: rotate(299deg) !important;
+      filter: blur(4px);
+    }
+  }
+  &:nth-of-type(5) {
+    top: 85% !important;
+    left: 8% !important;
+    .ideas-penta{
+      background-size: 46% 46%;
+      -webkit-transform: rotate(244deg);
+      -moz-transform: rotate(244deg);
+      -ms-transform: rotate(244deg);
+      -o-transform: rotate(244deg);
+      transform: rotate(244deg) !important;
+      filter: blur(6px);
+
+    }
+  }
+  &:nth-of-type(6) {
+    top: -8% !important;
+    left: -19% !important;
+    .ideas-penta {
+      background-size: 62% 62%;
+      -webkit-transform: rotate(103deg);
+      -moz-transform: rotate(103deg);
+      -ms-transform: rotate(103deg);
+      -o-transform: rotate(103deg);
+      transform: rotate(103deg) !important;
+      filter: blur(10px);
+    }
+  }
+}
+
+.parallaxjs-scene{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+}
+
+.scene {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
