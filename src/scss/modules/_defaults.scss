@@ -14,13 +14,13 @@ html {
 body {
   color: $text_color;
   transition: all .4s .3s ease-in;
-  background-color: white;
   height: 100vh;
   width: 100vw;
 
   background-color: #08AEEA;
   background-image: linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
 
+  overflow: hidden;
 }
 
 body, html {
@@ -28,7 +28,7 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, ul li {
-  font-family: -apple-system, "Helvetica Neue";
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
 }
 
 h1 {

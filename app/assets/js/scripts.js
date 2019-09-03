@@ -13,7 +13,7 @@
     });
 
     var img = $('<div/>').css({
-      'background-image': 'url(assets/images/' + (Math.random() * (13 - 2)).toFixed() + '.svg)',
+      'background-image': 'url(assets/images/' + (Math.random() * (12 - 2) +1 ).toFixed() + '.svg)',
       "transform": "rotate("+ (Math.random() * (180 - 1)).toFixed() +"deg)",
       "filter": "blur("+ (Math.random() * (divsize/3 - 5)).toFixed() +"px)"
     });
@@ -38,9 +38,11 @@
   }
 
   place();
+  $('.tileDate').height($('.tileAddress').height());
 
   $(window).resize(function(){
     place();
+    $('.tileDate').height($('.tileAddress').height());
   });
 
 
