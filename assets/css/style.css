@@ -34,17 +34,17 @@ html {
 body {
   color: #000;
   transition: all .4s .3s ease-in;
-  background-color: white;
   height: 100vh;
   width: 100vw;
   background-color: #08AEEA;
-  background-image: linear-gradient(180deg, #08AEEA 0%, #2AF598 100%); }
+  background-image: linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
+  overflow: hidden; }
 
 body, html {
   min-height: 100vh; }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, ul li {
-  font-family: -apple-system, "Helvetica Neue"; }
+  font-family: -apple-system, "Helvetica Neue", sans-serif; }
 
 h1 {
   font-size: 2.0736rem; }
@@ -707,6 +707,12 @@ canvas {
     .content .calendarTile > * {
       padding: 0.5rem 1rem; }
     .content .calendarTile .tileDate {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
       background: white; }
   .content .subtext {
     font-size: 16px;
