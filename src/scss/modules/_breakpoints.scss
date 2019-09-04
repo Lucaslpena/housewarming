@@ -7,6 +7,11 @@
 @media only screen and (min-width:768px) {
   .content{  padding: $page-margin; }
   .contact{  max-width: 40rem;  }
+  .calendarTile {
+    > * {
+      padding: 0.5rem 1rem !important;
+    }
+  }
 }
 @media only screen and (min-width:1024px) {
 

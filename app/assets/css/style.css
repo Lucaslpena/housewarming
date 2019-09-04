@@ -34,8 +34,8 @@ html {
 body {
   color: #000;
   transition: all .4s .3s ease-in;
-  height: 100vh;
   width: 100vw;
+  min-height: 100vh;
   background-color: #08AEEA;
   background-image: linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
   overflow: hidden; }
@@ -591,14 +591,16 @@ body:after {
   list-style: none; }
 
 .main {
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  -ms-flex-preferred-size: 100vh;
+      flex-basis: 100vh; }
 
 .footer {
   text-align: center;
@@ -693,10 +695,10 @@ canvas {
     -ms-flex-align: center;
         align-items: center;
     box-sizing: border-box;
-    border: lightgrey solid 1px;
+    border: #c98ad6 solid 1px;
     border-radius: 15px;
     max-width: 700px;
-    background-color: #e1e1e1;
+    background-color: #EEBC29;
     box-shadow: 0 15px 35px 0 rgba(42, 51, 83, 0.12), 0 5px 15px rgba(0, 0, 0, 0.06) !important;
     transition: all .15s ease;
     overflow: hidden; }
@@ -705,7 +707,7 @@ canvas {
       -ms-transform: translateY(-2px);
           transform: translateY(-2px); }
     .content .calendarTile > * {
-      padding: 0.5rem 1rem; }
+      padding: 0.25rem 0.5rem; }
     .content .calendarTile .tileDate {
       display: -ms-flexbox;
       display: flex;
@@ -737,7 +739,9 @@ canvas {
   .content {
     padding: 50px; }
   .contact {
-    max-width: 40rem; } }
+    max-width: 40rem; }
+  .calendarTile > * {
+    padding: 0.5rem 1rem !important; } }
 
 @media print {
   * {
